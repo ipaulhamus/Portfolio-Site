@@ -1,0 +1,95 @@
+.navbar-container {
+    width: 100%;
+    background-color: var(--graphite);
+
+    display: flex;
+    align-items: center;
+    position: relative; /* needed for absolute centering */
+}
+
+
+/* Logo */
+
+.navbar-logo-container {
+    position: relative;
+    width: 12rem;
+    height: 4.5rem;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logo-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 2rem;
+    width: 2rem;
+
+    z-index: 1;
+    opacity: 0.75;
+
+    margin-left: 1rem;
+}
+
+.navbar-logo-text {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    margin-left: 2rem;
+
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Nav Items */
+
+.nav-item-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* true center of navbar */
+    width: max-content;
+    align-self: auto;
+}
+
+.nav-item {
+    color: var(--strawberry-red);
+
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-shadow: 1px 1px var(--wisteria-blue);
+    text-decoration: underline;
+}
+
+/* Mobile Nav Items */
+
+.expand-btn {
+
+}
+
+.mobile-nav-container {
+
+}
+
+.mobile-nav-item {
+
+}
