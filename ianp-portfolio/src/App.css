@@ -3,3 +3,8 @@ html, body, #root {
   padding: 0;
   width: 100%;
 }
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
