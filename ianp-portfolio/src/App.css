@@ -1,7 +1,298 @@
+body {
+  background-color: grey;
+}
+
+.paint-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.paint-dot {
+  position: absolute;
+  display: block;
+  border-radius: 40% 60% 48% 52% / 55% 40% 60% 45%;
+  opacity: 0.5;
+  filter: blur(1px);
+  will-change: transform, border-radius, opacity;
+  animation:
+    splatter-drift var(--duration, 10s) linear infinite,
+    splatter-wobble calc(var(--duration, 10s) * 0.55) ease-in-out infinite;
+}
+
+.paint-dot--small {
+  border-radius: 50%;
+  filter: blur(0.4px);
+  opacity: 0.4;
+}
+
+.paint-dot:nth-child(1) {
+  width: 180px;
+  height: 180px;
+  top: 8%;
+  left: 5%;
+  background: color-mix(in srgb, var(--wisteria-blue) 48%, transparent);
+  --duration: 13s;
+  --dx: 26px;
+  --dy: -34px;
+  --rot: 16deg;
+}
+
+.paint-dot:nth-child(2) {
+  width: 240px;
+  height: 240px;
+  top: 65%;
+  left: 2%;
+  background: color-mix(in srgb, var(--wisteria-blue) 45%, transparent);
+  --duration: 18s;
+  --dx: 40px;
+  --dy: -24px;
+  --rot: -12deg;
+  animation-delay: -4s;
+}
+
+.paint-dot:nth-child(3) {
+  width: 210px;
+  height: 210px;
+  top: 12%;
+  right: 6%;
+  background: color-mix(in srgb, var(--strawberry-red) 44%, transparent);
+  --duration: 16s;
+  --dx: -28px;
+  --dy: 22px;
+  --rot: 14deg;
+  animation-delay: -7s;
+}
+
+.paint-dot:nth-child(4) {
+  width: 170px;
+  height: 170px;
+  top: 62%;
+  right: 4%;
+  background: color-mix(in srgb, var(--strawberry-red) 36%, transparent);
+  --duration: 15s;
+  --dx: -34px;
+  --dy: -28px;
+  --rot: -15deg;
+  animation-delay: -2s;
+}
+
+.paint-dot:nth-child(5) {
+  width: 95px;
+  height: 95px;
+  top: 44%;
+  left: -2%;
+  background: color-mix(in srgb, var(--wisteria-blue) 40%, transparent);
+  --duration: 11s;
+  --dx: 20px;
+  --dy: 16px;
+  --rot: 18deg;
+}
+
+.paint-dot:nth-child(6) {
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  right: -3%;
+  background: color-mix(in srgb, var(--strawberry-red) 40%, transparent);
+  --duration: 13s;
+  --dx: -18px;
+  --dy: 24px;
+  --rot: -10deg;
+  animation-delay: -6s;
+}
+
+.paint-dot:nth-child(7) {
+  width: 140px;
+  height: 140px;
+  top: 80%;
+  left: 1%;
+  background: color-mix(in srgb, var(--wisteria-blue) 38%, transparent);
+  --duration: 19s;
+  --dx: 38px;
+  --dy: -20px;
+  --rot: 9deg;
+  animation-delay: -3s;
+}
+
+.paint-dot:nth-child(8) {
+  width: 110px;
+  height: 110px;
+  top: 76%;
+  right: 2%;
+  background: color-mix(in srgb, var(--strawberry-red) 36%, transparent);
+  --duration: 17s;
+  --dx: -30px;
+  --dy: 14px;
+  --rot: -13deg;
+  animation-delay: -8s;
+}
+
+.paint-dot--small:nth-child(9) {
+  width: 56px;
+  height: 56px;
+  top: 18%;
+  left: 2%;
+  background: color-mix(in srgb, var(--wisteria-blue) 34%, transparent);
+  --duration: 12s;
+  --dx: 14px;
+  --dy: -10px;
+  --rot: 9deg;
+  animation-delay: -2s;
+}
+
+.paint-dot--small:nth-child(10) {
+  width: 38px;
+  height: 38px;
+  top: 68%;
+  left: 6%;
+  background: color-mix(in srgb, var(--strawberry-red) 32%, transparent);
+  --duration: 10s;
+  --dx: -12px;
+  --dy: 8px;
+  --rot: -8deg;
+  animation-delay: -5s;
+}
+
+.paint-dot--small:nth-child(11) {
+  width: 48px;
+  height: 48px;
+  top: 34%;
+  right: 4%;
+  background: color-mix(in srgb, var(--wisteria-blue) 30%, transparent);
+  --duration: 14s;
+  --dx: 10px;
+  --dy: 12px;
+  --rot: 7deg;
+  animation-delay: -7s;
+}
+
+.paint-dot--small:nth-child(12) {
+  width: 30px;
+  height: 30px;
+  top: 54%;
+  right: 1.5%;
+  background: color-mix(in srgb, var(--strawberry-red) 34%, transparent);
+  --duration: 9s;
+  --dx: -10px;
+  --dy: -8px;
+  --rot: 10deg;
+  animation-delay: -3s;
+}
+
+.paint-dot--small:nth-child(13) {
+  width: 42px;
+  height: 42px;
+  top: 86%;
+  left: 8%;
+  background: color-mix(in srgb, var(--wisteria-blue) 32%, transparent);
+  --duration: 15s;
+  --dx: 12px;
+  --dy: -9px;
+  --rot: -7deg;
+  animation-delay: -6s;
+}
+
+.paint-dot--small:nth-child(14) {
+  width: 34px;
+  height: 34px;
+  top: 12%;
+  right: 8%;
+  background: color-mix(in srgb, var(--strawberry-red) 30%, transparent);
+  --duration: 11s;
+  --dx: -8px;
+  --dy: 10px;
+  --rot: 6deg;
+  animation-delay: -1s;
+}
+
+@keyframes splatter-drift {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate3d(calc(var(--dx, 24px) * 0.95), calc(var(--dy, -20px) * 0.85), 0) rotate(calc(var(--rot, 12deg) * 1.1)) scale(1.18);
+  }
+  50% {
+    transform: translate3d(calc(var(--dx, 24px) * 1.6), calc(var(--dy, -20px) * 1.5), 0) rotate(calc(var(--rot, 12deg) * 1.9)) scale(1.3);
+  }
+  75% {
+    transform: translate3d(calc(var(--dx, 24px) * -0.65), calc(var(--dy, -20px) * 0.45), 0) rotate(calc(var(--rot, 12deg) * -1.15)) scale(1.12);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes splatter-wobble {
+  0% {
+    border-radius: 40% 60% 48% 52% / 55% 40% 60% 45%;
+    opacity: 0.44;
+  }
+  25% {
+    border-radius: 58% 42% 66% 34% / 35% 63% 37% 65%;
+    opacity: 0.63;
+  }
+  50% {
+    border-radius: 52% 48% 38% 62% / 68% 38% 62% 32%;
+    opacity: 0.52;
+  }
+  75% {
+    border-radius: 42% 58% 56% 44% / 48% 57% 43% 52%;
+    opacity: 0.6;
+  }
+  100% {
+    border-radius: 40% 60% 48% 52% / 55% 40% 60% 45%;
+    opacity: 0.44;
+  }
+}
+
+
+
+.content-container {
+  background-color: white;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 0 3px 3px 3px; /* Top: 0, Right: 2px, Bottom: 2px, Left: 2px */
+
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .paint-dot {
+    opacity: 0.34;
+  }
+
+  .content-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paint-dot {
+    animation: none;
+  }
+}
+
 html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.navbar-container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-img {

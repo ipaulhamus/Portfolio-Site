@@ -1,0 +1,27 @@
+.about-container {
+    display: flex;
+
+    gap: 1rem;
+    grid-template-columns: auto auto;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container-item {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container-item-no-flex {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
