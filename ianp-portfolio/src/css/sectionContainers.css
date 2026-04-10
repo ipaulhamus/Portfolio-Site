@@ -1,3 +1,12 @@
+.section-shading {
+    background-color: grey;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: fit-content;
+}
+
 .about-container {
     display: flex;
 
