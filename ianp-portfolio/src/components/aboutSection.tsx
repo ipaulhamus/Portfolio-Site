@@ -5,6 +5,7 @@ import '../css/buttons.css'
 export default function AboutSection() {
     return (
     <>
+    
         <div className="about-container">
             <div className="about-container-item">
                     <TextBox title="Hi, I'm Ian Paulhamus!" subtitle="" text="iuehwfuiehwfiuewhfeiuhfewiufhweiufhwejfioewjfoweijfewoijfewoifjweoifjweoifjewoifejwiofj

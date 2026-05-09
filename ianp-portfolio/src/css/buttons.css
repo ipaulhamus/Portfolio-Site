@@ -1,5 +1,5 @@
 .btns-div {
-    width: 100%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 
@@ -16,12 +16,13 @@
 }
 
 .btn-lg {
-    width: 80%;
-    height: 20%;
+    width: clamp(15rem, 35vw, 50rem);
+    height: clamp(8rem, 5vw, 10rem);
 
     margin: 1.5rem;
 
-    font-size: 1.2vw;
+    /* 'clamp' lets us define a max size and min size, very good for mobile scaling */
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: bold;
 
     color: white;
@@ -35,13 +36,13 @@
 }
 
 .btn-sm {
-    width: 70%;
-    height: 20%;
+    width: clamp(15rem, 32vw, 43rem);
+    height: clamp(4rem, 3vw, 6rem);
 
 
     margin: 0.7rem;
 
-    font-size: 1vw;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: bold;
 
     color: white;
