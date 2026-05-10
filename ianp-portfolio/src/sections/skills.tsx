@@ -6,7 +6,7 @@ import SkillsBlock from "../components/skillsBlock";
 import JSLogo from "../assets/JavaScript-Logo.png";
 import TSLogo from "../assets/Typescript-Logo-2020.png";
 import HTMLLogo from "../assets/HTML_Logo.png";
-import CSSLogo from "../assets/CSS-Logo.png";
+import CSSLogo from "../assets/Official-CSS-Logo.png";
 
 //Other Languages
 import CSharpLogo from "../assets/Csharp_Logo.png";
@@ -26,7 +26,7 @@ import TuxIcon from "../assets/Tux-Icon.png";
 import GitLogo from "../assets/Git-Icon.png";
 import SQLLogo from "../assets/sql-database.webp";
 
-export default function Skills() {
+export default function SkillsSection() {
 
     const WebTitles = ["JavaScript", "TypeScript", "HTML", "CSS"];
     const WebImages = [JSLogo, TSLogo, HTMLLogo, CSSLogo];
@@ -40,7 +40,7 @@ export default function Skills() {
     const ToolTitles = ["Git", "SQL", "Docker", "Linux"];
     const ToolImages = [GitLogo, SQLLogo, DockerLogo, TuxIcon];
 
-    return 
+    return (
     <>
         <div className="grey-background">
             <TitleBlock title="Skills" />
@@ -54,4 +54,5 @@ export default function Skills() {
             </div>
         </div>
     </>
+    )
 }

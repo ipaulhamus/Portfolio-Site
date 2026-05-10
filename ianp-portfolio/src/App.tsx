@@ -3,6 +3,7 @@ import NavBar from './components/navbar.tsx'
 import Hero from './components/hero.tsx'
 import TitleBlock from './components/titleBlock.tsx'
 import AboutSection from './components/aboutSection.tsx'
+import SkillsSection from './sections/skills.tsx';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Hero />
       <TitleBlock title="About"/>
       <AboutSection />
+      <SkillsSection />
       </div>
     </>
   )

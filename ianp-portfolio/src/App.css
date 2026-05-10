@@ -2,6 +2,37 @@ body {
   background-color: grey;
 }
 
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Light grey background that some of the page sections have */
+.grey-background {
+  background-color: rgba(211, 211, 211, 0.5);
+  
+  width: 100%;
+  height: fit-content;
+
+  padding: 0.8rem;
+
+  margin-top:  2rem;
+  margin-bottom: 2rem;
+
+}
+
+/* All of the CSS for the animated paint blobs */
 .paint-bg {
   position: fixed;
   inset: 0;
@@ -282,20 +313,4 @@ body {
   .paint-dot {
     animation: none;
   }
-}
-
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.navbar-container {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-img {
-  width: 100%;
-  height: auto;
 }

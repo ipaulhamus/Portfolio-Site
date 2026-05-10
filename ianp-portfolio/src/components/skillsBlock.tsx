@@ -1,4 +1,4 @@
-
+import '../css/skills.css';
 
 export default function SkillsBlock({titles, images, isRed}: {titles: string[], images: string[], isRed: boolean}) {
     return (
@@ -7,8 +7,8 @@ export default function SkillsBlock({titles, images, isRed}: {titles: string[], 
             <div className="skills-block-red">
                 {titles.map((title, index) =>
                     <div className="skills-item">
-                        <img src={images[index]}></img>
-                        <p>{title}</p>
+                        <img className="skills-img" src={images[index]}></img>
+                        <p className="skills-txt">{title}</p>
                     </div>
                 )}
             </div>
@@ -16,8 +16,8 @@ export default function SkillsBlock({titles, images, isRed}: {titles: string[], 
             <div className="skills-block-blue">
                 {titles.map((title, index) =>
                     <div className="skills-item">
-                        <img src={images[index]}></img>
-                        <p>{title}</p>
+                        <img className="skills-img" src={images[index]}></img>
+                        <p className="skills-txt">{title}</p>
                     </div>
                 )}
             </div>
