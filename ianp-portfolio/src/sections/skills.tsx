@@ -9,7 +9,7 @@ import HTMLLogo from "../assets/HTML_Logo.png";
 import CSSLogo from "../assets/Official-CSS-Logo.png";
 
 //Other Languages
-import CSharpLogo from "../assets/Csharp_Logo.png";
+import CSharpLogo from "../assets/Logo-C-Sharp.png";
 import KotlinLogo from "../assets/Kotlin-Icon.png";
 import SwiftIcon from "../assets/Swift-Icon.png";
 import PythonLogo from "../assets/Python-Logo.png";

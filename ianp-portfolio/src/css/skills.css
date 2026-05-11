@@ -1,4 +1,10 @@
+.skills-block-container {
+    width: fit-content;
+    height: fit-content;
 
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .skills-block-red {
 
@@ -7,10 +13,10 @@
     width: fit-content;
     padding: 0.5rem;
 
-    margin: 0.8rem;
+    margin: 0.6rem;
 
     background-color: var(--strawberry-red);
-    box-shadow: 3px, 3px, var(--wisteria-blue);
+    box-shadow: 6px 6px var(--wisteria-blue);
     color: var(--wisteria-blue);
 
     border-radius: 12px;
@@ -23,18 +29,18 @@
     width: fit-content;
     padding: 0.5rem;
 
-    margin: 0.8rem;
+    margin: 0.6rem;
 
     background-color: var(--wisteria-blue);
-    box-shadow: 3px, 3px, var(--strawberry-red);
+    box-shadow: 6px 6px var(--strawberry-red);
     color: var(--strawberry-red);
 
     border-radius: 12px;
 }
 
 .skills-item {
-    height: clamp(8rem, 6vw, 10rem);
-    width: clamp(5rem, 4vw, 7rem);
+    height: clamp(12rem, 7.5vw, 12rem);
+    width: clamp(8rem, 5vw, 10rem);
 
     border-radius: 12px;
     background-color: white;
@@ -46,10 +52,24 @@
 .skills-img {
     width: 100%;
     height: 70%;
+
+    object-fit: contain;
 }
 
 .skills-txt {
     font-weight: bold;
-    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+    font-size: clamp(1.6rem, 1.8vw, 1.6rem);
+     justify-content: center;
+
+    text-align: center;
+}
+
+.skills-float {
+    display: flex;
+
+    margin-left: auto;
+    margin-right:auto;
+
+    overflow: auto;
 }
 
