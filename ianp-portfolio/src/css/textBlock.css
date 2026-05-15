@@ -36,3 +36,10 @@
 
     color: white;
 }
+
+.text-ul {
+    font-size: 1.2rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
