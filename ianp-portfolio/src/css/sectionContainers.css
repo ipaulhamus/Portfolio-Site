@@ -43,12 +43,12 @@
     width: 100%;
     height: fit-content;
     display: flex;
-
-    padding: 2rem;
 }
 
 .experience-container-mobile {
     width: 100%;
     height: fit-content;
     padding: 2rem;
+
+    display: none;
 }

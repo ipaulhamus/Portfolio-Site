@@ -28,6 +28,14 @@
     font-weight: bold;
 }
 
+.text-surtitle {
+    margin-top: 0.3rem;
+    font-size: 1.35rem;
+
+    color: var(--banana-cream);
+    font-style: italic;
+}
+
 .text-p {
     font-size: 1.2rem;
     word-wrap: break-word;
