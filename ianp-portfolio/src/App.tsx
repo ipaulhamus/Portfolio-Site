@@ -4,7 +4,7 @@ import Hero from './components/hero.tsx'
 import TitleBlock from './components/titleBlock.tsx'
 import AboutSection from './components/aboutSection.tsx'
 import SkillsSection from './sections/skills.tsx';
-import Experience from './components/experience.tsx'
+import Experience from './sections/experience.tsx'
 
 function App() {
 

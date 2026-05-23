@@ -45,9 +45,19 @@
     color: white;
 }
 
+li {
+    margin-top: 0.7rem;
+}
+
 .text-ul {
     font-size: 1.2rem;
-    width: 100%;
+    width: fit-content;
     color: white;
-    text-align: center;
+
+    list-style-position: inside;
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+    overflow-y: auto;
 }

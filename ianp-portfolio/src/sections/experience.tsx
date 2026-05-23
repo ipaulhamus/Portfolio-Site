@@ -1,7 +1,7 @@
 import ExperienceArrow from '../assets/experience-arrow.png';
 import Splash from '../assets/color-splat-1.png';
 import '../css/experience.css'
-import TitleBlock from './titleBlock';
+import TitleBlock from '../components/titleBlock';
 
 export default function Experience() {
     return (
