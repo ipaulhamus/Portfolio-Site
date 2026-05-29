@@ -33,6 +33,7 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <Experience />
+      
       </div>
     </>
   )
