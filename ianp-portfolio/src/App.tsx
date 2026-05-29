@@ -5,6 +5,7 @@ import TitleBlock from './components/titleBlock.tsx'
 import AboutSection from './components/aboutSection.tsx'
 import SkillsSection from './sections/skills.tsx';
 import Experience from './sections/experience.tsx'
+import Projects from './sections/projects.tsx'
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <Experience />
-      
+      <Projects />
       </div>
     </>
   )

@@ -9,7 +9,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     /* This changes the size of the "rem" unit while scaling the page, so mobile view doesn't have giant elements */
-    font-size: clamp(10px, 1.2vw + 10px, 15px)
+    font-size: clamp(10px, 1.2vw + 10px, 15px);
     
 }
 

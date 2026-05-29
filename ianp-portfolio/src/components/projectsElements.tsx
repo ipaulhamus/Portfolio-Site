@@ -1,4 +1,4 @@
-
+import '../css/projects.css';
 
 export function ProjectHeader({image, title}: {image: string, title: string}) {
     return (
@@ -21,6 +21,8 @@ export function ProjectDescription({desc, skills}: {desc: string, skills: string
             <br />
             <h2 className="project-desc-title">Skills Used</h2>
             <p className="project-content">{skills}</p>
+            <br />
+            <button className="project-btn">View GitHub</button>
         </div>
         </>
     )

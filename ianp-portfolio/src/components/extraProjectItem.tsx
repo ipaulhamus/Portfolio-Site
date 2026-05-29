@@ -10,6 +10,7 @@ export default function ExtraProjectItem({title, desc, skills}:
                 {skills.map((skill, index) => (
                     <p key={index} className="ex-project-skill">{skill}</p>
                 ))}
+                <button className="ex-project-btn">View GitHub</button>
             </div>
         </>
     )
