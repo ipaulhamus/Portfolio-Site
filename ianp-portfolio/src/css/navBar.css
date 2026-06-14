@@ -4,11 +4,22 @@
 
     display: flex;
     align-items: center;
-    position: relative; /* needed for absolute centering */
+    position: fixed; /* needed for absolute centering */
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    height: 4.5rem;
+
+    border-bottom: 2px solid var(--wisteria-blue);
+}
+
+body {
+    padding-top: 4.5rem;
 }
 
 .navbar-desktop {
-    display: '';
+    display: flex;
 }
 
 .navbar-mobile {
