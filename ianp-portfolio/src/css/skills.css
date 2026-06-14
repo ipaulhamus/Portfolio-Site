@@ -70,6 +70,12 @@
     margin-left: auto;
     margin-right:auto;
 
-    overflow: auto;
+    overflow-y: scroll;
+    scrollbar-color: var(--banana-cream) var(--graphite);
 }
+/*
+.skills-float::-webkit-scrollbar {
+    
+}
+*/
 

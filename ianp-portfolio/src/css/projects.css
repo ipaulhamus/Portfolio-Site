@@ -24,10 +24,7 @@
 /* Main Project Display */
 .project-header-body {
     background-color: var(--graphite);
-    align-content: center;
-    justify-items: center;
-
-    width: fit-content;
+    width: 95%;
 
     margin-left: auto;
     margin-right: auto;
@@ -37,10 +34,15 @@
 }
 
 .project-img {
-    width: clamp(13rem, 22vw, 28rem);
+    width: 90%;
     border-radius: 15px;
     overflow: hidden;
-    margin: 0.5rem;
+    /* Images need to be changed to a block display so that they can be affected by auto margins */
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
 }
 
 .project-name, .project-desc-title {
@@ -48,3 +50,96 @@
     text-align: center;
 }
 
+.project-body {
+    background-color: var(--graphite);
+    align-content: center;
+    justify-items: center;
+
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 15px;
+    border: 2px solid var(--wisteria-blue);
+}
+
+.project-content {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+
+    padding: 0.4rem
+}
+
+.project-btn {
+    background-color: var(--strawberry-red);
+    color: white;
+    display: block;
+
+    border: none;
+    border-radius: 10px;
+
+    width: clamp(10rem, 20vw, 20rem);
+    height: clamp(1rem, 10vw, 3rem);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+/* Secondary Project Display */
+
+.ex-project-item {
+    background-color: var(--graphite);
+    border: solid 2px var(--wisteria-blue);
+    border-radius: 15px;
+
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 85%;
+}
+
+.ex-project-name {
+    color: var(--banana-cream);
+    font-size: 1.4rem;
+    text-align: left;
+
+    margin: 1rem;
+}
+
+.ex-project-desc {
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.ex-project-skills {
+    display: flex;
+}
+
+.ex-project-skill {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.ex-project-btn {
+    color: white;
+    background-color: var(--strawberry-red);
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: bold;
+    margin: 1rem;
+
+    width: clamp(7rem, 20vw, 16rem);
+    height: clamp(0.8rem, 10vw, 2.5rem);
+}

@@ -1,0 +1,8 @@
+/* This file contains styles for effects such as animations or hover effects */
+
+.btn-hover-effect:hover {
+    background-color: var(--banana-cream);
+    color: var(--graphite);
+
+    box-shadow: 4px 4px orange;
+}
