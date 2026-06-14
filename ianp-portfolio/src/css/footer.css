@@ -1,0 +1,39 @@
+.footer-shadow {
+    filter: drop-shadow(0px -7px var(--strawberry-red));
+}
+
+.footer-container {
+    width: 100%;
+    background-color: var(--graphite);
+    height: 15rem;
+    opacity: 100;
+
+    clip-path: polygon(0 4vw, 100% 0, 100% 100%, 0 100%);
+    
+    text-align: center;
+}
+
+.footer-title {
+    padding-top: 7.5rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.footer-link {
+    font-size: 1.6rem;
+    color: var(--banana-cream);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.footer-link:hover {
+    text-shadow: 1px 1px orange;
+}
+
+.footer-link:visited {
+    font-size: 1.6rem;
+    color: var(--banana-cream);
+    font-weight: bolder;
+    font-style: italic;
+}

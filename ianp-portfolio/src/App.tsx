@@ -6,6 +6,7 @@ import AboutSection from './components/aboutSection.tsx'
 import SkillsSection from './sections/skills.tsx';
 import Experience from './sections/experience.tsx'
 import Projects from './sections/projects.tsx'
+import Footer from './components/footer.tsx'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <Experience />
       <Projects />
       </div>
+      <Footer />
     </>
   )
 }
