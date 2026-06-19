@@ -1,4 +1,5 @@
 import '../css/projects.css';
+import { NavigateTo } from '../js/commonFunctions';
 
 export function ProjectHeader({image, title}: {image: string, title: string}) {
     return (
@@ -12,7 +13,8 @@ export function ProjectHeader({image, title}: {image: string, title: string}) {
 
 }
 
-export function ProjectDescription({desc, skills}: {desc: string, skills: string}) {
+export function ProjectDescription({desc, skills, link, btnText}: 
+    {desc: string, skills: string, link: string, btnText: string}) {
     return (
         <>
         <div className="project-body">
@@ -22,7 +24,10 @@ export function ProjectDescription({desc, skills}: {desc: string, skills: string
             <h2 className="project-desc-title">Skills Used</h2>
             <p className="project-content">{skills}</p>
             <br />
-            <button className="project-btn btn-hover-effect">View GitHub</button>
+            <button className="project-btn btn-hover-effect" 
+                onClick={() => NavigateTo(link)}>
+                    {btnText}
+            </button>
         </div>
         </>
     )

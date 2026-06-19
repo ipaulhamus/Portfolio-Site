@@ -1,8 +1,10 @@
 import '../css/projects.css';
 import '../css/effects.css';
 
-export default function ExtraProjectItem({title, desc, skills}: 
-        {title: string, desc: string, skills: string[]}) {
+import { NavigateTo } from '../js/commonFunctions';
+
+export default function ExtraProjectItem({title, desc, skills, link}: 
+        {title: string, desc: string, skills: string[], link: string}) {
     return (
         <>
             <div className="ex-project-item">
@@ -13,7 +15,10 @@ export default function ExtraProjectItem({title, desc, skills}:
                     <p key={index} className="ex-project-skill">{skill}</p>
                 ))}
                 </div>
-                <button className="ex-project-btn btn-hover-effect">View GitHub</button>
+                <button className="ex-project-btn btn-hover-effect"
+                    onClick={() => NavigateTo(link)}>
+                    View GitHub
+                </button>
             </div>
         </>
     )

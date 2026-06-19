@@ -6,3 +6,7 @@
 
     box-shadow: 4px 4px orange;
 }
+
+.btn-hover-effect {
+    cursor: pointer;
+}
