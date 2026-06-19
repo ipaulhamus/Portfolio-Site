@@ -7,30 +7,29 @@ export default function ProjectsSection() {
         <>
         <div className="projects-container">
             <div className="project-display">
-                <ProjectHeader image="https://placehold.co/600x400" title="Project 1" />
+                <ProjectHeader image="https://placehold.co/600x400" title="Algorithm Visualizer" />
                 <br />
-                <ProjectDescription desc="This project is filler. The purpose is to fill space, 
-                    it uses the space filler framework in the placeholder language. 
-                    This project shows my skills in placeholding." 
-                    skills="This project demenstrates proficiency in filling space and using time effectively." />
+                <ProjectDescription desc="This is a web application built using C# and Blazor that visualizes the process different sorting algorithms use to sort sets of integers. 
+                This project was created in a college Data Structures and Algorithms class. 
+                Once a sort completes, the application displays the best-case, average-case, and worst-case scenarios of the algorithm’s sorting processes in Big O notation."
+                skills="This project demostrates a proficiency in utilizing C# with the Blazor Framework, utilizing asynchonous tasks, and knowledge of efficiency concepts such as Big O Notation." />
             </div>
 
             <div className="project-display">
-                <ProjectHeader image="https://placehold.co/600x400" title="Project 2" />
+                <ProjectHeader image="https://placehold.co/600x400" title="Stages.Ink" />
                 <br />
-                <ProjectDescription desc="This project is filler. The purpose is to fill space, 
-                    it uses the space filler framework in the placeholder language. 
-                    This project shows my skills in placeholding."  
-                skills="This project demenstrates proficiency in filling space and using time effectively." />
+                <ProjectDescription desc="This project is an Electron.js application that functions as a desktop widget. The application shows the current available stagesa and modes to play in the online game Splatoon 3, 
+                fetched periodically from an API. The application have a multitude of settings including the widget size, the color theme, and settings to automatically open upon boot."  
+                skills="This project demostrates proficiency in JavaScript, HTML, & CSS alongside usage of APIs. In addition, the project demonstrates an understanding of creating and releasing applications through Electron.js." />
             </div>
 
             <div className="project-display">
-                <ProjectHeader image="https://placehold.co/600x400" title="Project 3" />
+                <ProjectHeader image="https://placehold.co/600x400" title="Stunt Cube" />
                 <br />
-                <ProjectDescription desc="This project is filler. The purpose is to fill space, 
-                    it uses the space filler framework in the placeholder language. 
-                    This project shows my skills in placeholding."  
-                    skills="This project demenstrates proficiency in filling space and using time effectively." />
+                <ProjectDescription desc="This project is a 2D Video Game in Unity that I created over the course of 2 months as my college capstone. The game features 3 different levels, with a mix of assets drawn by me in a 
+                    pixel art application alongside free Unity Assets, starring a cube that jumps and dashes through various obstacles and enemies. "  
+                    skills="This project demonstrates skills in the Software Development Lifecycle, with the project having many iterations of concepts and testing throughout it's 2 month development period. 
+                    This game also displays a fundamental understanding of the Unity engine and Game Development." />
             </div>
         </div>
     </>
