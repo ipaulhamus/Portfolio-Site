@@ -32,9 +32,22 @@
     border-radius: 15px;
     border: 2px solid var(--wisteria-blue);
 }
-
 .project-img {
     width: 90%;
+    height: 20rem;
+    border-radius: 15px;
+    overflow: hidden;
+    /* Images need to be changed to a block display so that they can be affected by auto margins */
+    display: block;
+    object-fit: cover;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+.project-img {
+    width: 90%;
+    height: 20rem;
     border-radius: 15px;
     overflow: hidden;
     /* Images need to be changed to a block display so that they can be affected by auto margins */

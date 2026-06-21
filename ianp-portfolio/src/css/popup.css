@@ -1,0 +1,16 @@
+.popup-menu {
+
+    margin-left: 90%;
+    margin-top: 10%;
+
+    background-color: var(--graphite);
+    border-radius: 10rem;
+
+    z-index: 999;
+
+    position: fixed;
+}
+
+.popup-item {
+    display: block;
+}

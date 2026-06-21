@@ -1,4 +1,4 @@
-import heroImage from '../assets/Hero-Banner-Prototype.png';
+import heroImage from '../assets/banner-photoshop.png';
 import '../App.css';
 import '../css/hero.css';
 

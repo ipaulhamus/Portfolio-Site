@@ -7,3 +7,14 @@ export function ScrollToPosition(yPos: number) {
 export function NavigateTo(url: string) {
     window.open(url);
 }
+
+export function DownloadFile(file: string) {
+  
+  const link = document.createElement('a');
+  link.href = file;
+  link.download = 'ian_paulhamus_resume.pdf';
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
