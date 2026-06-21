@@ -1,16 +1,49 @@
 .popup-menu {
+    visibility: hidden;
 
-    margin-left: 90%;
-    margin-top: 10%;
+    width: 20%;
+
+    margin-left: 78%;
+    margin-top: 2%;
+    margin-right: 15%;
 
     background-color: var(--graphite);
-    border-radius: 10rem;
+    border-radius: 8px;
 
     z-index: 999;
 
     position: fixed;
+
+    box-shadow: 3px 3px var(--banana-cream);
 }
 
 .popup-item {
+    visibility: hidden;
+
     display: block;
+
+    color: var(--strawberry-red);
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    text-align: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.popup-item:hover {
+    color: var(--banana-cream);
+    text-shadow: 1.5px 1.5px orange;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .popup-item {
+        visibility: visible;
+    }
+
+    .popup-menu {
+        visibility: visible;
+    }
 }

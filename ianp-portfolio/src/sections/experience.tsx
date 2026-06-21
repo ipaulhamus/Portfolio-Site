@@ -1,4 +1,3 @@
-import ExperienceArrow from '../assets/experience-arrow.png';
 import Splash from '../assets/color-splat-1.png';
 import '../css/experience.css'
 import TitleBlock from '../components/titleBlock';

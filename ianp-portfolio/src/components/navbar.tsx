@@ -1,7 +1,7 @@
 import '../css/navBar.css';
 import '../css/popup.css';
 import logoImage from '../assets/color-splat-1.png';
-import { ScrollToPosition, NavigateTo } from '../js/commonFunctions';
+import { ScrollToPosition } from '../js/commonFunctions';
 import { useState } from 'react';
 
 export default function NavBar() {

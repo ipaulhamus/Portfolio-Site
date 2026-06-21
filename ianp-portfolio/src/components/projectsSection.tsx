@@ -22,17 +22,6 @@ export default function ProjectsSection() {
             </div>
 
             <div className="project-display">
-                <ProjectHeader image={StagesDotInkImg} title="Stages.Ink" />
-                <br />
-                <ProjectDescription desc="This project is an Electron.js application that functions as a desktop widget. The application shows the current available stagesa and modes to play in the online game Splatoon 3, 
-                fetched periodically from an API. The application have a multitude of settings including the widget size, the color theme, and settings to automatically open upon boot."  
-                    skills="This project demostrates proficiency in JavaScript, HTML, & CSS alongside usage of APIs. In addition, the project demonstrates an understanding of creating and releasing applications through Electron.js."
-                    link="https://github.com/ipaulhamus/stages-dot-ink"
-                    btnText="View GitHub"
-                />
-            </div>
-
-            <div className="project-display">
                 <ProjectHeader image={StuntCubeImg} title="Stunt Cube" />
                 <br />
                 <ProjectDescription desc="This project is a 2D Video Game in Unity that I created over the course of 2 months as my college capstone. The game features 3 different levels, with a mix of assets drawn by me in a 
@@ -41,6 +30,17 @@ export default function ProjectsSection() {
                     This game also displays a fundamental understanding of the Unity engine and Game Development."
                     link="https://ianp20.itch.io/stunt-cube"
                     btnText="View Itch.io"
+                />
+            </div>
+
+            <div className="project-display">
+                <ProjectHeader image={StagesDotInkImg} title="Stages.Ink" />
+                <br />
+                <ProjectDescription desc="This project is an Electron.js application that functions as a desktop widget. The application shows the current available stagesa and modes to play in the online game Splatoon 3, 
+                fetched periodically from an API. The application have a multitude of settings including the widget size, the color theme, and settings to automatically open upon boot."  
+                    skills="This project demostrates proficiency in JavaScript, HTML, & CSS alongside usage of APIs. In addition, the project demonstrates an understanding of creating and releasing applications through Electron.js."
+                    link="https://github.com/ipaulhamus/stages-dot-ink"
+                    btnText="View GitHub"
                 />
             </div>
         </div>
